@@ -1,0 +1,109 @@
+$primary-color: #757575;
+$heading-color: #01a093;
+
+h1, h2 {
+	margin: 0;
+	letter-spacing: 2px;
+}
+h1 {
+	font-weight: 300;
+	font-size: 1.8rem;
+	color: $heading-color;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: .9rem;
+	line-height: 1.25;
+	font-weight: 300;
+	color: $primary-color;
+}
+.main {
+	top: 35vh;
+    position: relative;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+.morph-button:before, .morph-button .hex-200, .morph-button .hex-500, .morph-button .hex-900, .morph-button .hex-1000 {
+    width: 51px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: no-repeat center center;
+    display: block;
+}
+.morph-button {
+	margin: 20px 0 0 -20px;
+	background: #6fffdf;
+	color: #005f63;
+	width: auto;
+	height: 45px;
+	padding: 0;
+	position: relative;
+	border: 0;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	.hex-1000 {
+		background-image: url(/assets/img/hexagon-btn-200.svg);
+		left: -13px;
+	}
+	.hex-900 {
+		right: -33px;
+		background-image: url(/assets/img/hexagon-btn-900.svg);
+	}
+	.hex-500 {
+		right: -23px;
+		background-image: url(/assets/img/hexagon-btn-500.svg);
+	}
+	.hex-200 {
+    	background-image: url(/assets/img/hexagon-btn-200.svg);
+		right: -13px;
+	}
+	.text {
+		padding: 0 12px;
+		float: right;
+		position: relative;
+		overflow: hidden;
+		line-height: 47px;
+		white-space: nowrap;
+		display: block;
+	}
+}
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 4.8rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	.main {
+		top: 36vh;
+		position: relative;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		display: block;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	h1 {
+		font-size: 4.8rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}

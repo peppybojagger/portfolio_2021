@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+$font-stack: Lato, sans-serif;
+
+* {
+	font-family: $font-stack;
+}
+
+.all {
+	width: 100%;
+	margin: 0;
+	background: #e4f4f3;
+	min-height: 100vh;
+	padding-left: 0;
+	padding-top: 55px;
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.all {
+		padding-left: 95px;
+		padding-top: 0;
+	}
+	h1 {
+		  font-size: 4.8rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width : 1224px) {
+  }
+  
+  /* Large screens ----------- */
+  @media only screen and (min-width : 1824px) {
+  /* Styles */
+  }

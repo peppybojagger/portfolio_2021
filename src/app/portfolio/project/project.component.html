@@ -1,0 +1,57 @@
+<div class="img-head">
+	<img src="{{ project.imagePath }}" alt="{{ project.name }}" class="top-img">
+</div>
+<div class="container up">
+	<div class="row">
+		<div class="col-md-6 intro">
+			<h1> {{ project.name }} </h1>
+			<p class="tag"> {{ project.tag }} </p> 
+			<p> {{ project.description }} </p>
+			<div class="button-div">
+				<a href="{{ project.liveURL }}" target="_blank" class="morph-button">
+					<span class="hex-1000"></span> 
+					<span class="hex-900"></span> 
+					<span class="hex-500"></span> 
+					<span class="hex-200"></span> 
+					<span class="text">LIVE SITE</span>
+				</a>
+			</div>
+		</div>
+	
+		<div class="col-md-6 resp">
+			<div class="device-screen">
+				<div class="triangle"></div>
+				<img alt="Tablet View" title="Tablet View" class="tablet" src="/assets/img/{{ project.slug }}-tablet.jpg">
+				<img alt="Desktop View" title="Desktop View" class="desktop" src="/assets/img/{{ project.slug }}-full.jpg">
+				<img alt="Smartphone View" title="Smartphone View" class="phone" src="/assets/img/{{ project.slug }}-mobile.jpg">
+			</div>
+	
+		</div>
+		<div class="col-md-12">
+			<h3>Tools & Specifications:</h3>
+			<ul>
+				<li>{{ project.tech }}</li>
+			</ul>
+		</div>
+		<div class="col-md-6 screenshots">
+			<img class="screen desktop" src="/assets/img/{{ project.slug }}-full.gif" alt="{{ project.slug }}-desktop">
+		</div>
+		<div class="col-md-3 screenshots">
+			<img class="screen mobile" src="/assets/img/{{ project.slug }}-mobile.gif" alt="{{ project.slug }}-mobile">
+		</div>
+		<div class="col-md-3 screenshots">
+			<img class="screen tablet" src="/assets/img/{{ project.slug }}-tablet.gif" alt="{{ project.slug }}-tablet">
+		</div>
+		<div class="col-md-12 back-butt">
+			<div class="button-div">
+				<a href="/portfolio" class="morph-button back">
+					<span class="hex-1000"></span> 
+					<span class="hex-900"></span> 
+					<span class="hex-500"></span> 
+					<span class="hex-200"></span> 
+					<span class="text">BACK</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div> 

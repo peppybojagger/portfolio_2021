@@ -1,0 +1,244 @@
+$primary-color: #757575;
+$heading-color: #01a093;
+
+h1 {
+	font-weight: lighter;
+	font-size: 2.8rem;
+	color: $heading-color;
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 20px;
+	color: $primary-color;
+}
+p, li {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 20px;
+}
+a {
+	color: $heading-color;
+	font-weight: 400;
+}
+
+.img-head {
+	width: auto;
+	-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 20%, 50% 45%, 0 20%, 0 0);
+	clip-path: polygon(50% 0%, 100% 0, 100% 20%, 50% 45%, 0 20%, 0 0);
+	img.top-img {
+		width: 100%;
+	}
+}
+.up {
+	margin-top: -175px;
+	p.tag {
+		font-style: italic;
+		color: $primary-color;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.button-div {
+		width: 120px;
+    	margin: 30px auto;
+		.morph-button:before, .morph-button .hex-200, .morph-button .hex-500, .morph-button .hex-900, .morph-button .hex-1000 {
+			width: 51px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			background: no-repeat center center;
+			display: block;
+		}
+		.morph-button {
+			background: #6fffdf;
+			color: #005f63;
+			width: auto;
+			height: 45px;
+			padding: 0;
+			position: relative;
+			border: 0;
+			text-decoration: none;
+			display: inline-block;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-tap-highlight-color: transparent;
+			.hex-1000 {
+				background-image: url(/assets/img/hexagon-btn-200.svg);
+				left: -13px;
+			}
+			.hex-900 {
+				right: -33px;
+				background-image: url(/assets/img/hexagon-btn-900.svg);
+			}
+			.hex-500 {
+				right: -23px;
+				background-image: url(/assets/img/hexagon-btn-500.svg);
+			}
+			.hex-200 {
+				background-image: url(/assets/img/hexagon-btn-200.svg);
+				right: -13px;
+			}
+			.text {
+				padding: 0 12px;
+				float: right;
+				position: relative;
+				overflow: hidden;
+				line-height: 47px;
+				white-space: nowrap;
+				display: block;
+			}
+		}
+		.morph-button.back {
+			background: #6fffdf;
+			color: #005f63;
+			width: auto;
+			height: 45px;
+			padding: 0;
+			position: relative;
+			border: 0;
+			text-decoration: none;
+			display: inline-block;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-tap-highlight-color: transparent;
+			.hex-1000 {
+				background-image: url(/assets/img/hexagon-btn-200.svg);
+				left: 38px;
+			}
+			.hex-900 {
+				right: 28px;
+				background-image: url(/assets/img/hexagon-btn-900.svg);
+			}
+			.hex-500 {
+				right: 18px;
+				background-image: url(/assets/img/hexagon-btn-500.svg);
+			}
+			.hex-200 {
+				background-image: url(/assets/img/hexagon-btn-200.svg);
+				right: 8px;
+			}
+			.text {
+				padding: 0 12px;
+				float: right;
+				position: relative;
+				overflow: hidden;
+				line-height: 45px;
+				white-space: nowrap;
+				display: block;
+				left: 10px;
+			}
+		}
+	}
+	.screenshots {
+		margin-top: 50px;
+		img.screen.desktop, img.screen.mobile, img.screen.tablet {
+			width: 100%;
+		}
+	}
+	.button-div {
+		width: 120px;
+		margin-top: 50px;
+	}
+	.device-screen {
+    width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+    margin: 20% 0;
+    position: relative;
+    text-align: center;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+		text-align: center;
+		img {
+			position: absolute;
+			-webkit-box-shadow: 1px 0px 0 #fff, 0 0 30px rgba(0,95,99,0.2);
+			box-shadow: 1px 0px 0 #fff, 0 0 30px rgba(0,0,0,0.5);
+			-webkit-transform: rotateY(-30deg) rotateX(5deg);
+			transform: rotateY(-30deg) rotateX(5deg);
+			-webkit-transform-origin: left bottom;
+			-ms-transform-origin: left bottom;
+			transform-origin: left bottom;
+			display: block;
+		}
+		.tablet {
+			width: 40%;
+			top: 20%;
+			z-index: 1;
+		}
+		.desktop {
+			width: 95%;
+			top: 0;
+			left: 50%;
+			-webkit-transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+			transform: rotateY(-30deg) rotateX(5deg) translateX(-50%);
+		}
+		.phone {
+			width: 20%;
+			top: 40%;
+			left: 30%;
+			z-index: 2;
+		}
+		.triangle {
+			width: 65%;
+			height: 0;
+			padding-bottom: 75%;
+			position: absolute;
+			top: 50%;
+			right: -15px;
+			background: url('/assets/img/triangle.svg') no-repeat center center;
+		}
+	}
+}
+
+/* PLus ----------- */
+@media only screen and (min-width: 413px) {
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.container.up {
+    width: auto;
+	}
+	.up {
+		margin-top: -350px;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	h1 {
+		font-size: 4.8rem;
+	}
+	p, li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+	}
+	.img-head {
+		-webkit-clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 25%, 0 0, 0 0);
+		clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 25%, 0 0, 0 0);
+	}
+	.up {
+		width: auto;
+		margin-top: -1000px;
+		p.tag {
+			font-size: 22px;
+			line-height: 32px;
+		}
+		.device-screen {
+			margin: 0 0;
+			.triangle {
+				right: -121px;
+			}
+		}
+		.intro, .resp {
+			width: 50%;
+		}
+		.button-div {
+			margin: 30px 0;
+		}
+		.col-xs-5, .col-xs-7 {
+    	width: 25%;
+		}
+		.back-butt {
+			margin-top: -100px;
+		}
+	}
+}

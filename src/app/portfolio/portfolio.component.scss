@@ -1,0 +1,157 @@
+$heading-color: #01a093;
+$primary-color: #757575;
+
+.projects {
+	text-align: center;
+	overflow: hidden;
+}
+.project {
+	height: fit-content;
+    min-height: 450px;
+	.outside {
+		position: relative;
+        width: 300px;
+        height: 300px;
+		background: $heading-color;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
+	.inside {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		background: #e4f4f3;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
+	.outside.bud-dy, .outside.regal, .outside.kyle-whitaker, .outside.realty-cards   {
+		right: -723px;
+	}
+	.outside.ageless, .outside.acme, .outside.valerie-moore  {
+		left: 723px;
+	}
+	.project-image {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
+	h2 {
+		color: $heading-color;
+		font-weight: 300;
+    padding: 0 30px;
+	}
+	.project-desc {
+		color: $primary-color;
+		font-weight: 300;
+	}
+}
+/* PLus ----------- */
+@media only screen and (min-width: 413px) {
+	.outside.bud-dy, .outside.regal, .outside.kyle-whitaker, .outside.realty-cards   {
+		right: -743px !important;
+	}
+	.outside.ageless, .outside.acme, .outside.valerie-moore  {
+		left: 743px!important;
+	}
+}
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.project {
+		.outside {
+			width: 350px;
+			height: 350px;
+		}
+		.outside.bud-dy, .outside.regal, .outside.kyle-whitaker, .outside.realty-cards   {
+			right: -850px!important;
+		}
+		.outside.ageless, .outside.acme, .outside.valerie-moore  {
+			left: 850px!important;
+		}
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+	.projects {
+        text-align: left;
+		h2 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 20px;
+		}
+		.project {
+			position: relative;
+    	    height: 390px;
+			h2 {
+				padding: 0;
+			}
+			.outside {
+				position: absolute;
+				height: 380px;
+				background: $heading-color;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+			}
+			.outside.bud-dy, .outside.regal, .outside.kyle-whitaker, .outside.realty-cards  {
+				right: -550px!important;
+			}
+			.outside.ageless, .outside.acme, .outside.valerie-moore {
+				left: 850px!important;
+			}
+			.inside {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				background: #e4f4f3;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+			}
+			.project-image {
+				position: absolute;
+				right: 5px;
+				top: 5px;
+				width: 330px;
+				height: 360px;
+				-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+			}
+			.text {
+				width: 400px;
+				top: 25%;
+				position: absolute;
+			}
+			.bud-dy.text, .regal.text, .kyle-whitaker.text, .realty-cards.text {
+				left: 160px;
+			}
+			.ageless.text, .acme.text, .valerie-moore.text {
+				right: 120px;
+			}
+		}
+	}
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	.projects {
+		.project {
+			.outside.bud-dy, .outside.regal, .outside.kyle-whitaker, .outside.realty-cards {
+				right: -350px!important;
+			}
+			.outside.ageless, .outside.acme, .outside.valerie-moore  {
+				left: 1040px!important;
+			}
+			.bud-dy.text, .regal.text, .kyle-whitaker.text, .realty-cards.text {
+				left: 350px;
+			}
+			.ageless.text, .acme.text, .valerie-moore.text {
+				right: 320px;
+			}
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.head {
+	width: 100%;
+	height: 55px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(23, 169, 157, 0.9);
+    background: -webkit-gradient(to bottom, color-stop(0, rgba(23, 169, 157, 0.9)), to(rgba(0, 95, 99, 0.9)));
+    background: linear-gradient(to bottom, rgba(23, 169, 157, 0.9) 0, rgba(0, 95, 99, 0.9) 100%);
+	overflow: hidden;
+	z-index: 9;
+	.trigger {
+    width: 100%;
+    padding: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+	}
+	.burger {
+    width: 25px;
+    height: 19px;
+    position: relative;
+		span {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: #b0ffee;
+    display: block;
+		}
+		.top {
+			top: 0;
+			-webkit-transform-origin: 1% 0;
+			-ms-transform-origin: 1% 0;
+			transform-origin: 1% 0;
+		}
+		.middle {
+			top: 50%;
+			margin-top: -1px;
+		}
+		.bottom {
+			bottom: 0;
+			-webkit-transform-origin: 0 100%;
+			-ms-transform-origin: 0 100%;
+			transform-origin: 0 100%;
+		}
+	}
+}
+.menu {
+	width: 100%;
+	height: 100%;
+	padding: 0 15px;
+	position: fixed;
+	top: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: rgba(23,169,157,0.9);
+	background: -webkit-gradient(to bottom, color-stop(0, rgba(23,169,157,0.9)), to(rgba(0,95,99,0.9)));
+	background: -webkit-linear-gradient(to bottom, rgba(23,169,157,0.9) 0, rgba(0,95,99,0.9) 100%);
+	background: linear-gradient(to bottom, rgba(23,169,157,0.9) 0, rgba(0,95,99,0.9) 100%);
+	overflow: hidden;
+	max-width: inherit;
+	a {
+    margin: 0;
+    line-height: 1.8;
+    text-align: center;
+    color: #b0ffee;
+	}
+	nav {
+		height: 80%;
+    	padding-top: 80px;
+		a {
+			position: relative;
+			font-size: 36px;
+			font-weight: 300;
+			text-decoration: none;
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 70px;
+		}
+		.active-link {
+			color: #20ecbe;
+			background-image: url(/assets/img/tri-menu.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		ul {
+			height: 90%;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		li {
+			width: 100%;
+			display: table;
+			margin: 30px 0;
+		}
+	}
+}
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.head {
+		width: 95px;
+    	height: 100%;
+		.trigger {
+    	padding: 35px;
+		}
+	}
+	.menu {
+		nav {
+			height: 900px;
+			padding-left: 125px;
+    		padding-top: 100px;
+			a {
+				font-size: 76px;
+				line-height: 150px;
+				text-align: left;
+			}
+			.active-link {
+				background-image: url(/assets/img/tri-menu-big.png);
+				background-position: -170px;
+			}
+			li {
+				width: 750px;
+			}
+		}
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	.menu {
+		nav {
+			height: auto;
+			padding-top: 20px;
+			a {
+				line-height: 120px;
+			}
+			.active-link {
+				background-image: url(/assets/img/tri-menu-big.png);
+				background-position: 515px;
+			  	background-size: 60% 100%;
+			}
+			li {
+				width: 96%;
+			}
+		}
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	.menu {
+		nav {
+			.active-link {
+				background-position: 845px;
+			  	background-size: 50% 100%;
+			}
+			li {
+				width: 100%;
+				margin: 60px 0;
+			}
+		}
+	}
+}

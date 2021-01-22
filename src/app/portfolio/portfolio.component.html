@@ -1,0 +1,18 @@
+<div class="container projects">
+	<div class="row">
+        <div class="col-md-12">
+            <a [routerLink]="['project', project.slug ]" *ngFor="let project of projects">
+                <div class="project">
+                <div class="outside {{ project.slug }}" [@photoState]="flyIn">
+                  <div class="inside"><img [src]="project.imagePath" alt="{{ project.name }}" class="project-image img-responsive"/></div>
+                </div>
+            
+                    <div class="{{ project.slug }} text">
+                        <h2> {{ project.name }} </h2>
+                        <p class="project-desc"> {{ project.tag }} </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

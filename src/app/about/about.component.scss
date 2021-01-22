@@ -1,0 +1,153 @@
+$primary-color: #757575;
+$heading-color: #01a093;
+
+h2 {
+	color: $primary-color;
+	font-size: 20px;
+	font-weight: 300;
+}
+p, li {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 22px;
+}
+a {
+	color: $heading-color;
+	font-weight: 400;
+}
+.about {
+	padding-bottom: 15px;
+}
+.me {
+	height: 100%;
+	margin: 20px auto;
+	padding: 0 55px;
+}
+.intro {
+	padding-top: 0;
+	padding-bottom: 15px;
+	.greeting {
+    	font-size: 80px;
+		font-style: italic;
+		line-height: 70px;
+		font-weight: 300;
+		color: $heading-color;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.abt {
+		font-size: 18px;
+		font-weight: 300;
+		font-style: italic;
+		color: $primary-color;
+	}
+}
+.imgprofile {
+	width: 100%;
+	margin: 0 auto;
+	-webkit-clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+	}
+.social {
+	display: flex;
+	position: relative;
+	width: fit-content;
+	height: 60px;
+	text-align: center;
+	margin: 20px auto;
+	top: -30px;
+	.icon {
+    background-image: url(/assets/img/hexagon-900.png);
+		background-size: 60px 60px;
+		background-repeat: no-repeat;
+		width: 60px;
+    	height: 60px;
+		padding: 15px;
+	}
+	.github {
+		margin-right: 20px;
+	}
+	img.git, img.link {
+		width: 30px;
+		height: 30px;
+	}
+}
+.resume {
+	margin-top: 12px;
+}
+
+/* iPads and Tablets ----------- */
+@media only screen and (min-width: 768px) {
+	.intro, .profile {
+		width: 55%;
+		max-width: 55%;
+	}
+	.about {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.me {
+		position: absolute;
+		width: 210px;
+   		right: 15px;
+		height: auto;
+	}
+	.social {
+		width: fit-content;
+		right: 80px;
+		top: 330px;
+		position: absolute;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	.col-md-12 {
+    	width: 65%;
+	}
+	h2 {
+		font-size: 24px;
+    font-weight: 400;
+	}
+	p, li {
+		font-size: 17px;
+		line-height: 25px;
+	}
+	.intro {
+		max-width: 65%;
+		.greeting {
+			font-size: 100px;
+			line-height: 100px;
+		}
+		.abt {
+			font-size: 28px;
+    		line-height: 32px;
+		}
+	}
+	.site, .profile {
+		max-width: 65%;
+	}
+	.about {
+		height: 100%;
+	}
+	.me {
+		width: 485px;
+	}
+	.social {
+		width: fit-content;
+		right: 172px;
+		top: 400px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	.container {
+		width: 1400px;
+	}
+	.about {
+		padding-left: 0;
+	}
+	.me {
+		padding: 0 15px;
+	}
+}

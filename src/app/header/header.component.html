@@ -1,0 +1,27 @@
+<div class="container-fluid head">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="trigger" (click)="toggle()">
+				<div class="burger">
+					<span class="top" [@top]="viewMenu"></span>
+					<span class="middle" [@middle]="viewMenu"></span>
+					<span class="bottom" [@bottom]="viewMenu"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container menu" [@menuState]="viewMenu">
+	<nav>
+		<ul>
+			<li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()">home</a></li>
+			<li><a routerLink="/portfolio" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()">portfolio</a></li>
+			<li><a routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()">about</a></li>
+			<li><a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="toggle()">contact</a></li>
+		</ul>
+	</nav>
+
+<app-footer></app-footer>
+
+</div>
